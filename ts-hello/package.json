@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc main.ts --target ES5 --outDir js",
+    "start:button": "tsc button.ts --target ES5 --outDir js",
+    "start:button:w": "tsc button.ts --target ES5 --outDir js --watch",
     "start:all": "tsc *.ts --target ES5 --outDir js",
     "start:watch": "tsc main.ts --target ES5 --outDir js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
