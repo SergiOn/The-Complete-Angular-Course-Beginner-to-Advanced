@@ -1,0 +1,17 @@
+{
+  "name": "ts-hello",
+  "version": "1.0.0",
+  "description": "Section 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc main.ts --target ES5 --outDir js",
+    "start:all": "tsc *.ts --target ES5 --outDir js",
+    "start:watch": "tsc main.ts --target ES5 --outDir js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SergiOn",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  }
+}
