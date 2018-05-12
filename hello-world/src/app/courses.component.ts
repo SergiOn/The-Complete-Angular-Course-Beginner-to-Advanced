@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
     </table>
     
     <input type="text" (keyup.enter)="onKeyUp()" />
+    <input type="text" #email (keyup.enter)="onKeyUp(email.value)" />
     
     <button class="btn badge-primary" [class.active]="activated">Save</button>
     <button [style.backgroundColor]="activated ? 'blue' : 'white'">Save</button>
@@ -23,7 +24,7 @@ export class CoursesComponent {
 
   activated = true;
 
-  onKeyUp() {
-    console.log('ENTER was pressed');
+  onKeyUp(email) {
+    console.log('ENTER was pressed', email);
   }
 }
