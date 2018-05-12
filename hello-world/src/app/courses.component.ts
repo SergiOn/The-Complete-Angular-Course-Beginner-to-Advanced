@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
       </tr>
     </table>
     <button class="btn badge-primary" [class.active]="activated">Save</button>
+    <button [style.backgroundColor]="activated ? 'blue' : 'white'">Save</button>
   `
 })
 export class CoursesComponent {
