@@ -2,8 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'courses',
-  template: '<h2>Courses</h2>'
+  template: `
+    <img [src]="imageUrl" />
+    <table>
+      <tr>
+        <!--<td [colspan]="colSpan"></td>-->
+        <td [attr.colspan]="colSpan"></td>
+      </tr>
+    </table>
+  `
 })
 export class CoursesComponent {
-
+  imageUrl = '';
+  colSpan = 2;
 }
