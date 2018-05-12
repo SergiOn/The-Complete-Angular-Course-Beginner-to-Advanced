@@ -10,6 +10,9 @@ import { Component } from '@angular/core';
         <td [attr.colspan]="colSpan"></td>
       </tr>
     </table>
+    
+    <input type="text" (keyup.enter)="onKeyUp()" />
+    
     <button class="btn badge-primary" [class.active]="activated">Save</button>
     <button [style.backgroundColor]="activated ? 'blue' : 'white'">Save</button>
   `
@@ -19,4 +22,8 @@ export class CoursesComponent {
   colSpan = 2;
 
   activated = true;
+
+  onKeyUp() {
+    console.log('ENTER was pressed');
+  }
 }
