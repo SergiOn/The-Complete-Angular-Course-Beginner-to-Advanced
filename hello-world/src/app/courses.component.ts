@@ -10,10 +10,12 @@ import { Component } from '@angular/core';
         <td [attr.colspan]="colSpan"></td>
       </tr>
     </table>
-    <button class="btn badge-primary">Save</button>
+    <button class="btn badge-primary" [class.active]="activated">Save</button>
   `
 })
 export class CoursesComponent {
   imageUrl = '';
   colSpan = 2;
+
+  activated = true;
 }
