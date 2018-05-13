@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  imageUrl = '';
+
+  post = {
+    title: 'Title',
+    isFavorite: true
+  };
+
+  onClick() {
+
+  }
+
 }
