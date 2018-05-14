@@ -2,10 +2,7 @@ import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'favorite',
-  template: `
-    <!--<div>isFavorite: {{isFavorite | json}}</div>-->
-    <div>isFavorite: {{isSelected | json}}</div>
-  `,
+  templateUrl: './favorite.component.html',
   // inputs: ['isFavorite']
 })
 export class FavoriteComponent {
