@@ -25,4 +25,12 @@ export class SignupFormComponent {
   onClick() {
     console.log(this.username);
   }
+
+  login() {
+    console.log('submit');
+
+    this.form.setErrors({
+      invalidLogin: true
+    });
+  }
 }
