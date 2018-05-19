@@ -6,7 +6,8 @@ import { CoursesComponent } from './courses.component';
 import { TitleCasePipe } from './title-case.pipe';
 import {FavoriteComponent} from "./favorite.component";
 import {SignupFormComponent} from "./signup-form/signup-form.component";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {NewCourseFormComponent} from "./new-course-form/new-course-form.component";
 
 @NgModule({
   declarations: [
@@ -14,10 +15,12 @@ import {ReactiveFormsModule} from "@angular/forms";
     CoursesComponent,
     FavoriteComponent,
     SignupFormComponent,
+    NewCourseFormComponent,
     TitleCasePipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],
