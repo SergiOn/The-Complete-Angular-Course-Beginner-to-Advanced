@@ -16,7 +16,15 @@
 
 <!--</favorite>-->
 
+<input type="text" class="form-control" appInputFormat="lowercase" [format]="'uppercase'">
+<input type="text" class="form-control" [appInputFormat]="'lowercase'" [format]="'uppercase'">
+<input type="text" class="form-control" [appInputFormat] [format]="'uppercase'">
+
+<hr>
+
 <new-course-form></new-course-form>
+
+<hr>
 
 <signup-form></signup-form>
 
